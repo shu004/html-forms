@@ -32,46 +32,62 @@
 
         <h2>Order Form</h2>
             <form>
-                <label>Your name</label>
-                <input type="text" name="name">
-            </form>
-            <form>
-                <label>Who are we sending this to?</label>
-                <input type="text" name="email">
-            </form>
+                <div>
+                    <label for="fname">Your name</label>
+                    <input type="text" name="name" id="fname">
+                </div>
 
-            <form>
-                <lablel>Choose a melon:</lablel>
-                <select name=melon>
-                    <option value="watermelon">Watermelon</option>
-                    <option value="canteloupe">Canteloupe</option>
-                    <option value="honeydew">Honeydew</option>
-                </select>
-            </form>
+                <div>
+                    <label for="emailadd">Who are we sending this to?</label>
+                    <input type="text" name="email" id="emailadd">
+                </div>
 
-            <form>
-                <label>When should we deliver?</label>
-                <input type="radio" name="time" value="am">
-                <label>Morning</label>
-                <input type="radio" name="time" value="pm">
-                <label>Evening</label>
-                <input type="radio" name="time" value="any">
-                <label>Any Time</label>
-            </form>
+                <div>
+                    <label for="melonlist">Choose a melon:</label>
+                    <select name="melon", id="melonlist">
+                        <option value="watermelon">Watermelon</option>
+                        <option value="canteloupe">Canteloupe</option>
+                        <option value="honeydew">Honeydew</option>
+                    </select>
+                </div>
 
-            <form>
-                <p>Enter your message:</p><textarea name="message"></textarea>
-            </form>
+                <div>
+                    <fieldset>
+                        <legend>
+                            <label>When should we deliver?</label>
+                        </legend>
+                            <div>
+                                <input type="radio" name="time" value="am" id="morning">
+                                <label for="morning">Morning</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="time" value="pm" id="evening">
+                                <label for="evening">Evening</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="time" value="any" id="anytime">
+                                <label for="anytime">Any Time</label>
+                            </div>
+                    </fieldset>
+                </div>
 
-            <form>
-                <label>Subscribe to our newsletter</label>
-                <input type="checkbox" name="subscribe" value="yes">
-                <label>Yes</label>
-            </form>
+                <div>
+                    <p>Enter your message:</p><textarea name="message"></textarea>
+                </div>
 
-            <form>
+                <div>
+                    <fieldset>
+                        <legend>
+                            <label>Subscribe to our newsletter</label>
+                        </legend>
+                        <input type="checkbox" name="subscribe" value="yes" id="enroll">
+                        <label for="enroll">Yes</label>
+                    </fieldset>
+                </div>
+
+
                 <button type="submit">Submit Query</button>
-            </form>
+        </form>
     </body>
 </html>
 
